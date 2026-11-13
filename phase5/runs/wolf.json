@@ -1,0 +1,61 @@
+{
+ "args": {
+  "base": "/home/ismarwolf/wolfgpt-data/ckpt/final_best.pt",
+  "data_dir": "/home/ismarwolf/wolfgpt-data/sft_id",
+  "tokenizer": "/home/ismarwolf/wolfgpt-data/data_fw/tokenizer.json",
+  "ckpt_dir": "/home/ismarwolf/wolfgpt-data/ckpt",
+  "tag": "wolf",
+  "epochs": 2,
+  "max_steps": 0,
+  "lr": 3e-05,
+  "warmup_frac": 0.03,
+  "batch_seqs": 32,
+  "micro_tokens": 4096,
+  "micro": 16,
+  "eval_every": 200,
+  "max_train": 0,
+  "ckpt_every": 1000,
+  "resume": false,
+  "device": "cuda"
+ },
+ "history": [
+  {
+   "step": 0,
+   "val": 1.4876018961995052,
+   "by_source": {
+    "dolly": 2.774043455395467,
+    "explore-instruct-rewrite": 2.5718048413594565,
+    "identity": 3.6145722729309537,
+    "openhermes-50k": 1.6278364376724783,
+    "self-oss-instruct": 0.7256005870129755,
+    "smol-contraints": 1.3269634651200133,
+    "smol-magpie-ultra-short": 1.541068100612368,
+    "smol-summarize-20k": 1.5264624387600023,
+    "smol-summarize-5k": 2.0673487602943754,
+    "smollm-rewrite-30k": 0.9264732494356616
+   }
+  },
+  {
+   "step": 200,
+   "train": 1.54028430134058,
+   "val": 1.490714939420992
+  },
+  {
+   "step": 400,
+   "train": 1.3828412237856538,
+   "val": 1.4911781367171304
+  },
+  {
+   "step": 600,
+   "train": 1.4027734443359077,
+   "val": 1.4905617494977998
+  },
+  {
+   "step": 676,
+   "train": 1.3583195310968317,
+   "val": 1.4904612146115905
+  }
+ ],
+ "best_val": 1.4904612146115905,
+ "base_val": 1.4876018961995052
+}

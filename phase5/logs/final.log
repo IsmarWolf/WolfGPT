@@ -1,0 +1,185 @@
+GPU memory free before training: 14.4 of 15.9 GB (the rest is used by other programs: close other programs)
+[final] 446,353 train / 1,000 val conversations | 2 epochs = 27896 steps of 32 conversations | lr 0.0003
+step    0 | val 2.395 (base model, before fine-tuning)
+   per source: dolly 2.564 (n=37) | explore-instruct-rewrite 2.928 (n=4) | openhermes-50k 2.461 (n=110) | self-oss-instruct 2.317 (n=112) | smol-contraints 2.195 (n=81) | smol-magpie-ultra-short 2.402 (n=565) | smol-summarize-20k 2.658 (n=29) | smol-summarize-5k 2.424 (n=8) | smollm-rewrite-30k 2.367 (n=54)
+   step 1: 1.5s for 24,019 tokens in 7 GPU passes
+   step 2: 0.4s for 12,239 tokens in 4 GPU passes
+   step 3: 0.2s for 1,838 tokens in 2 GPU passes
+   step 4: 0.8s for 26,607 tokens in 8 GPU passes
+   step 5: 0.7s for 23,115 tokens in 7 GPU passes
+step   200 | epoch 1 | train 2.136 | val 2.000 | gnorm 0.61 | 33.1k tok/s | mem 4.9 GB used / 5.2 GB reserved | ETA 4h24m *best*
+step   400 | epoch 1 | train 1.942 | val 1.939 | gnorm 0.92 | 33.3k tok/s | mem 4.9 GB used / 5.2 GB reserved | ETA 4h15m *best*
+step   600 | epoch 1 | train 1.858 | val 1.883 | gnorm 0.51 | 33.3k tok/s | mem 4.9 GB used / 5.2 GB reserved | ETA 4h20m *best*
+step   800 | epoch 1 | train 1.856 | val 1.871 | gnorm 0.73 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 4h18m *best*
+step  1000 | epoch 1 | train 1.819 | val 1.820 | gnorm 1.00 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 4h18m *best*
+step  1200 | epoch 1 | train 1.778 | val 1.817 | gnorm 0.87 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 4h15m *best*
+step  1400 | epoch 1 | train 1.794 | val 1.791 | gnorm 0.51 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 4h13m *best*
+step  1600 | epoch 1 | train 1.752 | val 1.769 | gnorm 0.64 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 4h11m *best*
+step  1800 | epoch 1 | train 1.767 | val 1.750 | gnorm 0.66 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 4h09m *best*
+step  2000 | epoch 1 | train 1.726 | val 1.740 | gnorm 0.94 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 4h09m *best*
+step  2200 | epoch 1 | train 1.723 | val 1.730 | gnorm 0.73 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 4h07m *best*
+step  2400 | epoch 1 | train 1.726 | val 1.738 | gnorm 0.91 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 4h05m
+step  2600 | epoch 1 | train 1.689 | val 1.715 | gnorm 0.52 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 4h03m *best*
+step  2800 | epoch 1 | train 1.663 | val 1.712 | gnorm 0.84 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 4h00m *best*
+step  3000 | epoch 1 | train 1.684 | val 1.697 | gnorm 0.45 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h59m *best*
+step  3200 | epoch 1 | train 1.650 | val 1.693 | gnorm 0.52 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h57m *best*
+step  3400 | epoch 1 | train 1.684 | val 1.695 | gnorm 0.64 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h55m
+step  3600 | epoch 1 | train 1.656 | val 1.678 | gnorm 0.53 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h54m *best*
+step  3800 | epoch 1 | train 1.623 | val 1.671 | gnorm 0.74 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h53m *best*
+step  4000 | epoch 1 | train 1.651 | val 1.683 | gnorm 0.64 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h51m
+step  4200 | epoch 1 | train 1.610 | val 1.669 | gnorm 0.63 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h49m *best*
+step  4400 | epoch 1 | train 1.658 | val 1.653 | gnorm 1.23 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h47m *best*
+step  4600 | epoch 1 | train 1.590 | val 1.667 | gnorm 0.70 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h44m
+step  4800 | epoch 1 | train 1.617 | val 1.656 | gnorm 0.63 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h42m
+step  5000 | epoch 1 | train 1.654 | val 1.650 | gnorm 0.40 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h40m *best*
+step  5200 | epoch 1 | train 1.582 | val 1.643 | gnorm 0.87 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h38m *best*
+step  5400 | epoch 1 | train 1.607 | val 1.641 | gnorm 0.50 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h36m *best*
+step  5600 | epoch 1 | train 1.608 | val 1.637 | gnorm 0.48 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h34m *best*
+step  5800 | epoch 1 | train 1.603 | val 1.639 | gnorm 0.44 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h33m
+step  6000 | epoch 1 | train 1.623 | val 1.623 | gnorm 0.51 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h30m *best*
+step  6200 | epoch 1 | train 1.610 | val 1.631 | gnorm 0.67 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h28m
+step  6400 | epoch 1 | train 1.594 | val 1.623 | gnorm 0.62 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h26m *best*
+step  6600 | epoch 1 | train 1.561 | val 1.618 | gnorm 0.46 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h24m *best*
+step  6800 | epoch 1 | train 1.556 | val 1.618 | gnorm 0.55 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h22m
+step  7000 | epoch 1 | train 1.593 | val 1.616 | gnorm 1.45 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h21m *best*
+step  7200 | epoch 1 | train 1.554 | val 1.611 | gnorm 1.09 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h19m *best*
+step  7400 | epoch 1 | train 1.574 | val 1.609 | gnorm 0.62 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h17m *best*
+step  7600 | epoch 1 | train 1.593 | val 1.605 | gnorm 0.46 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h15m *best*
+step  7800 | epoch 1 | train 1.603 | val 1.610 | gnorm 2.85 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h13m
+step  8000 | epoch 1 | train 1.555 | val 1.606 | gnorm 0.59 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h11m
+step  8200 | epoch 1 | train 1.580 | val 1.605 | gnorm 0.40 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h09m *best*
+step  8400 | epoch 1 | train 1.592 | val 1.598 | gnorm 0.58 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h07m *best*
+step  8600 | epoch 1 | train 1.587 | val 1.593 | gnorm 1.06 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h05m *best*
+step  8800 | epoch 1 | train 1.598 | val 1.604 | gnorm 0.61 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h03m
+step  9000 | epoch 1 | train 1.547 | val 1.587 | gnorm 0.50 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 3h01m *best*
+step  9200 | epoch 1 | train 1.593 | val 1.593 | gnorm 0.88 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h59m
+step  9400 | epoch 1 | train 1.578 | val 1.591 | gnorm 0.82 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h57m
+step  9600 | epoch 1 | train 1.540 | val 1.587 | gnorm 0.48 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h55m
+step  9800 | epoch 1 | train 1.547 | val 1.581 | gnorm 0.42 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h53m *best*
+step 10000 | epoch 1 | train 1.575 | val 1.582 | gnorm 0.59 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h51m
+step 10200 | epoch 1 | train 1.564 | val 1.580 | gnorm 0.42 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h49m *best*
+step 10400 | epoch 1 | train 1.581 | val 1.572 | gnorm 0.96 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h47m *best*
+step 10600 | epoch 1 | train 1.529 | val 1.575 | gnorm 0.51 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h45m
+step 10800 | epoch 1 | train 1.560 | val 1.571 | gnorm 0.61 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h44m *best*
+step 11000 | epoch 1 | train 1.613 | val 1.570 | gnorm 0.40 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h41m *best*
+step 11200 | epoch 1 | train 1.544 | val 1.568 | gnorm 0.49 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h40m *best*
+step 11400 | epoch 1 | train 1.526 | val 1.572 | gnorm 1.12 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h38m
+step 11600 | epoch 1 | train 1.566 | val 1.568 | gnorm 0.65 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h35m
+step 11800 | epoch 1 | train 1.538 | val 1.563 | gnorm 0.43 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h34m *best*
+step 12000 | epoch 1 | train 1.560 | val 1.559 | gnorm 0.75 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h32m *best*
+step 12200 | epoch 1 | train 1.507 | val 1.562 | gnorm 0.46 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h30m
+step 12400 | epoch 1 | train 1.521 | val 1.558 | gnorm 0.91 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h28m *best*
+step 12600 | epoch 1 | train 1.542 | val 1.551 | gnorm 0.50 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h26m *best*
+step 12800 | epoch 1 | train 1.549 | val 1.550 | gnorm 0.47 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h24m *best*
+step 13000 | epoch 1 | train 1.521 | val 1.550 | gnorm 0.41 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h22m *best*
+step 13200 | epoch 1 | train 1.545 | val 1.552 | gnorm 0.67 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h20m
+step 13400 | epoch 1 | train 1.506 | val 1.553 | gnorm 0.62 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h18m
+step 13600 | epoch 1 | train 1.546 | val 1.550 | gnorm 0.55 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h16m
+step 13800 | epoch 1 | train 1.533 | val 1.541 | gnorm 0.46 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h14m *best*
+step 14000 | epoch 2 | train 1.517 | val 1.540 | gnorm 0.68 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h13m *best*
+step 14200 | epoch 2 | train 1.462 | val 1.543 | gnorm 0.79 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h11m
+step 14400 | epoch 2 | train 1.425 | val 1.542 | gnorm 2.65 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h09m
+step 14600 | epoch 2 | train 1.442 | val 1.540 | gnorm 0.49 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h07m
+step 14800 | epoch 2 | train 1.487 | val 1.536 | gnorm 0.68 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h05m *best*
+step 15000 | epoch 2 | train 1.419 | val 1.536 | gnorm 0.46 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h03m
+step 15200 | epoch 2 | train 1.434 | val 1.539 | gnorm 0.53 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 2h01m
+step 15400 | epoch 2 | train 1.470 | val 1.535 | gnorm 0.65 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h59m *best*
+step 15600 | epoch 2 | train 1.461 | val 1.536 | gnorm 0.34 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h57m
+step 15800 | epoch 2 | train 1.476 | val 1.532 | gnorm 0.44 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h55m *best*
+step 16000 | epoch 2 | train 1.434 | val 1.530 | gnorm 0.38 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h53m *best*
+step 16200 | epoch 2 | train 1.459 | val 1.531 | gnorm 0.73 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h51m
+step 16400 | epoch 2 | train 1.449 | val 1.528 | gnorm 0.54 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h50m *best*
+step 16600 | epoch 2 | train 1.454 | val 1.528 | gnorm 0.58 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h48m
+step 16800 | epoch 2 | train 1.438 | val 1.527 | gnorm 0.48 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h46m *best*
+step 17000 | epoch 2 | train 1.440 | val 1.525 | gnorm 0.48 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h44m *best*
+step 17200 | epoch 2 | train 1.462 | val 1.524 | gnorm 0.60 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h42m *best*
+step 17400 | epoch 2 | train 1.448 | val 1.523 | gnorm 0.41 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h40m *best*
+step 17600 | epoch 2 | train 1.455 | val 1.523 | gnorm 0.44 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h38m *best*
+step 17800 | epoch 2 | train 1.436 | val 1.522 | gnorm 0.54 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h36m *best*
+step 18000 | epoch 2 | train 1.434 | val 1.520 | gnorm 0.45 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h34m *best*
+step 18200 | epoch 2 | train 1.457 | val 1.517 | gnorm 0.57 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h32m *best*
+step 18400 | epoch 2 | train 1.408 | val 1.515 | gnorm 0.33 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h30m *best*
+step 18600 | epoch 2 | train 1.411 | val 1.517 | gnorm 0.49 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h28m
+step 18800 | epoch 2 | train 1.413 | val 1.516 | gnorm 0.46 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h26m
+step 19000 | epoch 2 | train 1.440 | val 1.512 | gnorm 0.38 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h25m *best*
+step 19200 | epoch 2 | train 1.432 | val 1.513 | gnorm 0.37 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h23m
+step 19400 | epoch 2 | train 1.415 | val 1.509 | gnorm 0.43 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h21m *best*
+step 19600 | epoch 2 | train 1.441 | val 1.509 | gnorm 0.62 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h19m
+step 19800 | epoch 2 | train 1.424 | val 1.510 | gnorm 0.39 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h17m
+step 20000 | epoch 2 | train 1.424 | val 1.509 | gnorm 0.59 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h15m *best*
+step 20200 | epoch 2 | train 1.445 | val 1.506 | gnorm 0.41 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h13m *best*
+step 20400 | epoch 2 | train 1.473 | val 1.504 | gnorm 0.49 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h11m *best*
+step 20600 | epoch 2 | train 1.450 | val 1.502 | gnorm 0.41 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h09m *best*
+step 20800 | epoch 2 | train 1.395 | val 1.503 | gnorm 0.50 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h07m
+step 21000 | epoch 2 | train 1.434 | val 1.503 | gnorm 0.58 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h06m
+step 21200 | epoch 2 | train 1.437 | val 1.503 | gnorm 0.73 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h04m
+step 21400 | epoch 2 | train 1.413 | val 1.500 | gnorm 0.44 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h02m *best*
+step 21600 | epoch 2 | train 1.431 | val 1.499 | gnorm 0.49 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 1h00m *best*
+step 21800 | epoch 2 | train 1.436 | val 1.499 | gnorm 0.39 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h58m *best*
+step 22000 | epoch 2 | train 1.438 | val 1.497 | gnorm 0.37 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h56m *best*
+step 22200 | epoch 2 | train 1.416 | val 1.498 | gnorm 0.68 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h54m
+step 22400 | epoch 2 | train 1.424 | val 1.497 | gnorm 0.45 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h52m
+step 22600 | epoch 2 | train 1.430 | val 1.496 | gnorm 0.48 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h50m *best*
+step 22800 | epoch 2 | train 1.401 | val 1.493 | gnorm 0.86 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h48m *best*
+step 23000 | epoch 2 | train 1.432 | val 1.495 | gnorm 0.73 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h46m
+step 23200 | epoch 2 | train 1.437 | val 1.495 | gnorm 0.58 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h45m
+step 23400 | epoch 2 | train 1.433 | val 1.493 | gnorm 0.48 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h43m *best*
+step 23600 | epoch 2 | train 1.407 | val 1.493 | gnorm 0.41 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h41m
+step 23800 | epoch 2 | train 1.407 | val 1.491 | gnorm 0.53 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h39m *best*
+step 24000 | epoch 2 | train 1.401 | val 1.492 | gnorm 0.74 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h37m
+step 24200 | epoch 2 | train 1.415 | val 1.490 | gnorm 0.44 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h35m *best*
+step 24400 | epoch 2 | train 1.409 | val 1.489 | gnorm 0.37 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h33m *best*
+step 24600 | epoch 2 | train 1.414 | val 1.489 | gnorm 0.43 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h31m
+step 24800 | epoch 2 | train 1.387 | val 1.489 | gnorm 0.43 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h29m *best*
+step 25000 | epoch 2 | train 1.431 | val 1.490 | gnorm 1.04 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h27m
+step 25200 | epoch 2 | train 1.409 | val 1.490 | gnorm 0.37 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h25m
+step 25400 | epoch 2 | train 1.387 | val 1.489 | gnorm 0.74 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h23m *best*
+step 25600 | epoch 2 | train 1.420 | val 1.489 | gnorm 0.49 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h21m
+step 25800 | epoch 2 | train 1.438 | val 1.488 | gnorm 0.41 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h20m *best*
+step 26000 | epoch 2 | train 1.425 | val 1.486 | gnorm 0.76 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h18m *best*
+step 26200 | epoch 2 | train 1.419 | val 1.486 | gnorm 0.56 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h16m *best*
+step 26400 | epoch 2 | train 1.410 | val 1.486 | gnorm 0.47 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h14m *best*
+step 26600 | epoch 2 | train 1.386 | val 1.486 | gnorm 0.46 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h12m
+step 26800 | epoch 2 | train 1.427 | val 1.486 | gnorm 0.56 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h10m
+step 27000 | epoch 2 | train 1.403 | val 1.486 | gnorm 0.39 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h08m *best*
+step 27200 | epoch 2 | train 1.412 | val 1.485 | gnorm 0.38 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h06m *best*
+step 27400 | epoch 2 | train 1.424 | val 1.486 | gnorm 0.49 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h04m
+step 27600 | epoch 2 | train 1.405 | val 1.485 | gnorm 0.70 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h02m *best*
+step 27800 | epoch 2 | train 1.427 | val 1.484 | gnorm 0.59 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h00m *best*
+step 27896 | epoch 2 | train 1.380 | val 1.485 | gnorm 0.43 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h00m
+
+best val 1.484 (base model 2.395) | saved /home/ismarwolf/wolfgpt-data/ckpt/final_best.pt
+best model re-checked: val 1.484
+   per source: dolly 2.774 (n=37) | explore-instruct-rewrite 2.572 (n=4) | openhermes-50k 1.640 (n=110) | self-oss-instruct 0.723 (n=112) | smol-contraints 1.335 (n=81) | smol-magpie-ultra-short 1.538 (n=565) | smol-summarize-20k 1.526 (n=29) | smol-summarize-5k 2.067 (n=8) | smollm-rewrite-30k 0.926 (n=54)
+
+User: hello
+WolfGPT: Hello! How can I help you today?
+
+User: What is the capital of France?
+WolfGPT: The capital of France is Paris.
+
+User: Explain what photosynthesis is in two sentences.
+WolfGPT: Photosynthesis is the process by which plants, algae, and some bacteria convert light energy, usually from the sun, into chemical energy stored in glucose. This process, called photosynthesis, occurs in specialized cells called chloroplasts, which contain the pigment chlorophyll, the light-dependent green pigment. During the light-dependent reactions, chlorophyll breaks down glucose molecules and releases oxygen as a byproduct. This oxygen is released into the atmosphere as a byproduct.
+
+User: Give me three tips for studying.
+WolfGPT: 1. Use a variety of sources of information.
+2. Use the internet for research.
+3. Make use of libraries or online resources.
+
+User: What is 12 + 15?
+WolfGPT: 12 + 15 = 24.
+
+User: Write a short poem about the sea.
+WolfGPT: In the calm air, where waves lash against the shore,
+A sea that's home, a beauty,
+A world that's both beautiful and serene.
+
+Her home, a charming sea,
+A place where the sun shines bright,
+A sea that's both beautiful and serene.
+
+A sea that's home, a world where the night's darkness falls,
+A world where the sea's calm, where the waves' secrets are.
+
+In this world, a sea that's home, where the night's magic exists.
+A sea

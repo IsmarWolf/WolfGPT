@@ -1,0 +1,47 @@
+{
+ "args": {
+  "base": "/home/ismarwolf/wolfgpt-data/ckpt/main_best.pt",
+  "data_dir": "/home/ismarwolf/wolfgpt-data/sft",
+  "tokenizer": "/home/ismarwolf/wolfgpt-data/data_fw/tokenizer.json",
+  "ckpt_dir": "/home/ismarwolf/wolfgpt-data/ckpt",
+  "tag": "smoke",
+  "epochs": 2,
+  "max_steps": 20,
+  "lr": 0.0001,
+  "warmup_frac": 0.03,
+  "batch_seqs": 32,
+  "micro_tokens": 4096,
+  "micro": 16,
+  "eval_every": 10,
+  "device": "cuda"
+ },
+ "history": [
+  {
+   "step": 0,
+   "val": 2.379194068961522,
+   "by_source": {
+    "dolly": 2.6241214662068892,
+    "explore-instruct-rewrite": 1.6394746622462182,
+    "openhermes-50k": 2.308271518217798,
+    "self-oss-instruct": 2.3625573764814827,
+    "smol-contraints": 2.29782764649631,
+    "smol-magpie-ultra-short": 2.3766072782459973,
+    "smol-summarize-20k": 2.3408291506401726,
+    "smol-summarize-5k": 2.5971430860292086,
+    "smollm-rewrite-30k": 2.4551333858818603
+   }
+  },
+  {
+   "step": 10,
+   "train": 2.387158536165953,
+   "val": 2.147619104857044
+  },
+  {
+   "step": 20,
+   "train": 2.1270391061902045,
+   "val": 2.113287073775815
+  }
+ ],
+ "best_val": 2.113287073775815,
+ "base_val": 2.379194068961522
+}

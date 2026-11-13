@@ -1,0 +1,91 @@
+GPU memory free before training: 14.4 of 15.9 GB (the rest is used by other programs: close other programs)
+[sweep_lr5e-5] 150,000 train / 1,000 val conversations | 1 epochs = 4687 steps of 32 conversations | lr 5e-05 | 150,000 training conversations used
+step    0 | val 2.395 (base model, before fine-tuning)
+   per source: dolly 2.564 (n=37) | explore-instruct-rewrite 2.928 (n=4) | openhermes-50k 2.461 (n=110) | self-oss-instruct 2.317 (n=112) | smol-contraints 2.195 (n=81) | smol-magpie-ultra-short 2.402 (n=565) | smol-summarize-20k 2.658 (n=29) | smol-summarize-5k 2.424 (n=8) | smollm-rewrite-30k 2.367 (n=54)
+   step 1: 1.6s for 25,315 tokens in 8 GPU passes
+   step 2: 0.8s for 25,860 tokens in 8 GPU passes
+   step 3: 0.9s for 29,509 tokens in 8 GPU passes
+   step 4: 0.9s for 32,385 tokens in 8 GPU passes
+   step 5: 0.8s for 27,874 tokens in 8 GPU passes
+step   200 | epoch 1 | train 2.126 | val 2.002 | gnorm 0.96 | 33.3k tok/s | mem 4.9 GB used / 5.2 GB reserved | ETA 0h45m *best*
+step   400 | epoch 1 | train 1.953 | val 1.935 | gnorm 1.29 | 33.2k tok/s | mem 4.9 GB used / 5.2 GB reserved | ETA 0h42m *best*
+step   600 | epoch 1 | train 1.913 | val 1.901 | gnorm 0.67 | 33.2k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h40m *best*
+step   800 | epoch 1 | train 1.870 | val 1.876 | gnorm 0.49 | 33.2k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h38m *best*
+step  1000 | epoch 1 | train 1.836 | val 1.862 | gnorm 0.55 | 33.2k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h36m *best*
+step  1200 | epoch 1 | train 1.815 | val 1.846 | gnorm 0.53 | 33.2k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h33m *best*
+step  1400 | epoch 1 | train 1.787 | val 1.836 | gnorm 1.04 | 33.2k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h31m *best*
+step  1600 | epoch 1 | train 1.823 | val 1.820 | gnorm 1.04 | 33.2k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h29m *best*
+step  1800 | epoch 1 | train 1.781 | val 1.814 | gnorm 0.67 | 33.2k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h27m *best*
+step  2000 | epoch 1 | train 1.797 | val 1.804 | gnorm 0.51 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h26m *best*
+step  2200 | epoch 1 | train 1.763 | val 1.799 | gnorm 0.55 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h24m *best*
+step  2400 | epoch 1 | train 1.771 | val 1.792 | gnorm 0.57 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h22m *best*
+step  2600 | epoch 1 | train 1.780 | val 1.788 | gnorm 0.88 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h20m *best*
+step  2800 | epoch 1 | train 1.746 | val 1.781 | gnorm 0.56 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h18m *best*
+step  3000 | epoch 1 | train 1.740 | val 1.777 | gnorm 0.43 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h16m *best*
+step  3200 | epoch 1 | train 1.762 | val 1.773 | gnorm 0.77 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h14m *best*
+step  3400 | epoch 1 | train 1.754 | val 1.770 | gnorm 0.54 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h12m *best*
+step  3600 | epoch 1 | train 1.728 | val 1.768 | gnorm 0.41 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h10m *best*
+step  3800 | epoch 1 | train 1.734 | val 1.767 | gnorm 0.37 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h08m *best*
+step  4000 | epoch 1 | train 1.742 | val 1.765 | gnorm 0.47 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h06m *best*
+step  4200 | epoch 1 | train 1.725 | val 1.764 | gnorm 2.50 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h04m *best*
+step  4400 | epoch 1 | train 1.727 | val 1.762 | gnorm 1.12 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h02m *best*
+step  4600 | epoch 1 | train 1.730 | val 1.761 | gnorm 0.40 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h00m *best*
+step  4687 | epoch 1 | train 1.740 | val 1.761 | gnorm 0.41 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h00m *best*
+
+best val 1.761 (base model 2.395) | saved /home/ismarwolf/wolfgpt-data/ckpt/sweep_lr5e-5_best.pt
+best model re-checked: val 1.761
+   per source: dolly 2.351 (n=37) | explore-instruct-rewrite 2.701 (n=4) | openhermes-50k 1.831 (n=110) | self-oss-instruct 1.061 (n=112) | smol-contraints 1.640 (n=81) | smol-magpie-ultra-short 1.822 (n=565) | smol-summarize-20k 1.737 (n=29) | smol-summarize-5k 2.061 (n=8) | smollm-rewrite-30k 1.264 (n=54)
+
+User: hello
+WolfGPT: The sun is shining, and the sky is full of the stars.
+
+User: What is the capital of France?
+WolfGPT: Paris is known for being the capital of Europe and it is home to the largest number of seats in European Parliament. It is a political and economic powerhouse of France.
+
+User: Explain what photosynthesis is in two sentences.
+WolfGPT: Photosynthesis is a fundamental process that allows plants, algae, and some bacteria to convert sunlight into glucose, a simple sugar. This process is a vital part of the natural cycle of living organisms and allows the plant, algae, and bacteria to grow. The plants photosynthesis uses chlorophyll, a green pigment that captures sunlight energy, making all of the light energy available to them.
+
+Photosynthesis is a fundamental process that allows the plant, algae, and bacteria to convert sunlight into glucose, a simple sugar that is used to make energy for their cells.
+
+The second sentence is a bit more technical
+
+User: Give me three tips for studying.
+WolfGPT: 1. **Create a study schedule**
+Consider the time you choose to study. This will help you focus on the task at hand and avoid distractions.
+
+2. **Avoid distractions**
+Consider using distractions like smartphones, social media, or mobile devices to keep you focused. This can make it difficult to concentrate on the material.
+
+3. **Use breaks**
+Breaks may seem like a chore, but they can help you stay sharp and focused. Consider using a study pad or a study planner to help you stay on track.
+
+4. **Take regular breaks
+
+User: What is 12 + 15?
+WolfGPT: 12 + 15 = 12.15
+
+Let's say we are given that each group of 12 is represented by 6 pieces of 9. We can plug these values into the given expression and get:
+12 + 5 = 12
+
+So, 12 + 15 = 12.15.
+
+The answer is: 12 * 6 = 13.
+
+User: Write a short poem about the sea.
+WolfGPT: The sea,
+The sea is the sea.
+
+I can see it,
+
+And yet, I've walked it on.
+
+To make the sea clear,
+And yet, I've walked it on.
+I've just stepped on it, and there's
+As it moves,
+And yet, I've walked it on.
+I've walked it on, and yet,
+And yet, I've walked it on,
+And yet, I've walked it on.
+I've walked it on, and yet,
+And yet, I've walked it

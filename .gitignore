@@ -1,0 +1,24 @@
+# data and model files are big or private: never commit them
+*.bin
+*.pt
+*.safetensors
+data/
+data_pt/
+data_fw/
+out_*/
+__pycache__/
+.env
+*.bak
+progress.html
+
+# the model release folder lives on Hugging Face, not here (weights are 440 MB; GitHub's limit is 100 MB per file)
+release/
+
+# copy of the Llama 3.1 licence used when building the release folder: it belongs to the model, not to this code
+phase5/LICENSE
+
+# local noise
+.venv/
+*.log.tmp
+.DS_Store
+Thumbs.db

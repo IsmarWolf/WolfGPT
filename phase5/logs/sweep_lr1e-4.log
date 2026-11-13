@@ -1,0 +1,80 @@
+GPU memory free before training: 14.4 of 15.9 GB (the rest is used by other programs: close other programs)
+[sweep_lr1e-4] 150,000 train / 1,000 val conversations | 1 epochs = 4687 steps of 32 conversations | lr 0.0001 | 150,000 training conversations used
+step    0 | val 2.395 (base model, before fine-tuning)
+   per source: dolly 2.564 (n=37) | explore-instruct-rewrite 2.928 (n=4) | openhermes-50k 2.461 (n=110) | self-oss-instruct 2.317 (n=112) | smol-contraints 2.195 (n=81) | smol-magpie-ultra-short 2.402 (n=565) | smol-summarize-20k 2.658 (n=29) | smol-summarize-5k 2.424 (n=8) | smollm-rewrite-30k 2.367 (n=54)
+   step 1: 1.5s for 25,315 tokens in 8 GPU passes
+   step 2: 0.8s for 25,860 tokens in 8 GPU passes
+   step 3: 0.9s for 29,509 tokens in 8 GPU passes
+   step 4: 0.9s for 32,385 tokens in 8 GPU passes
+   step 5: 0.8s for 27,874 tokens in 8 GPU passes
+step   200 | epoch 1 | train 2.088 | val 1.971 | gnorm 0.82 | 33.2k tok/s | mem 4.9 GB used / 5.2 GB reserved | ETA 0h45m *best*
+step   400 | epoch 1 | train 1.914 | val 1.902 | gnorm 1.22 | 33.3k tok/s | mem 4.9 GB used / 5.2 GB reserved | ETA 0h42m *best*
+step   600 | epoch 1 | train 1.874 | val 1.867 | gnorm 0.60 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h40m *best*
+step   800 | epoch 1 | train 1.830 | val 1.839 | gnorm 0.55 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h38m *best*
+step  1000 | epoch 1 | train 1.792 | val 1.824 | gnorm 0.52 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h36m *best*
+step  1200 | epoch 1 | train 1.772 | val 1.807 | gnorm 0.54 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h33m *best*
+step  1400 | epoch 1 | train 1.743 | val 1.794 | gnorm 0.93 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h31m *best*
+step  1600 | epoch 1 | train 1.779 | val 1.777 | gnorm 1.10 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h29m *best*
+step  1800 | epoch 1 | train 1.734 | val 1.771 | gnorm 0.61 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h27m *best*
+step  2000 | epoch 1 | train 1.753 | val 1.760 | gnorm 0.45 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h25m *best*
+step  2200 | epoch 1 | train 1.715 | val 1.753 | gnorm 0.42 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h23m *best*
+step  2400 | epoch 1 | train 1.723 | val 1.747 | gnorm 0.58 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h22m *best*
+step  2600 | epoch 1 | train 1.732 | val 1.741 | gnorm 0.79 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h20m *best*
+step  2800 | epoch 1 | train 1.695 | val 1.733 | gnorm 0.55 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h18m *best*
+step  3000 | epoch 1 | train 1.688 | val 1.727 | gnorm 0.45 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h16m *best*
+step  3200 | epoch 1 | train 1.711 | val 1.722 | gnorm 0.76 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h14m *best*
+step  3400 | epoch 1 | train 1.702 | val 1.718 | gnorm 0.54 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h12m *best*
+step  3600 | epoch 1 | train 1.674 | val 1.716 | gnorm 0.44 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h10m *best*
+step  3800 | epoch 1 | train 1.679 | val 1.714 | gnorm 0.38 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h08m *best*
+step  4000 | epoch 1 | train 1.686 | val 1.711 | gnorm 0.45 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h06m *best*
+step  4200 | epoch 1 | train 1.669 | val 1.710 | gnorm 2.41 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h04m *best*
+step  4400 | epoch 1 | train 1.671 | val 1.708 | gnorm 1.02 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h02m *best*
+step  4600 | epoch 1 | train 1.673 | val 1.707 | gnorm 0.40 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h00m *best*
+step  4687 | epoch 1 | train 1.682 | val 1.706 | gnorm 0.40 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h00m *best*
+
+best val 1.706 (base model 2.395) | saved /home/ismarwolf/wolfgpt-data/ckpt/sweep_lr1e-4_best.pt
+best model re-checked: val 1.706
+   per source: dolly 2.370 (n=37) | explore-instruct-rewrite 2.645 (n=4) | openhermes-50k 1.784 (n=110) | self-oss-instruct 0.985 (n=112) | smol-contraints 1.582 (n=81) | smol-magpie-ultra-short 1.769 (n=565) | smol-summarize-20k 1.673 (n=29) | smol-summarize-5k 2.057 (n=8) | smollm-rewrite-30k 1.181 (n=54)
+
+User: hello
+WolfGPT: The day ahead is today. Your day is going to be a bit busy, but I'm here to help! 
+
+I'm here to help you plan your day, let's talk. What's the day like today?
+
+User: What is the capital of France?
+WolfGPT: Côte d'Ivoire is a French state located in the Atlantic Ocean in the east of the country. It is known for its rich history and unique culture.
+
+User: Explain what photosynthesis is in two sentences.
+WolfGPT: Photosynthesis is an important step in the process of converting sunlight into energy. It occurs in the presence of sunlight, which is essential for the production of ATP and other molecules. The energy produced by photosynthesis is used to convert carbon dioxide and water into glucose and oxygen, which are then used up in the body.
+
+User: Give me three tips for studying.
+WolfGPT: One of the best ways to learn is by watching videos and reading with your friends. These are great ways to stay engaged in a study environment, as they can be both entertaining and interactive. 
+
+1. Practice: Aim for at least five hours of practice each day to build your confidence. This can include some reading, listening to music, or practicing mindfulness techniques.
+
+2. Don't worry too much: With no prior knowledge, try to understand the material with your own eyes. This will help you remember the material and apply it to your study plan.
+
+3.
+
+User: What is 12 + 15?
+WolfGPT: 12 + 15 = 18
+
+The answer is: 12 + 15 = 18
+
+In this sentence, the subject is 12 and the verb is 15, as the sentence is already in the subject. The subject of the sentence is 12, so the sentence is 12 + 15 = 18.
+
+User: Write a short poem about the sea.
+WolfGPT: The sea is a calm, calm sea.
+
+The sea feels like the ocean beneath us.
+
+The sea is the light, the sea the soft,
+The sky is a misty mist,
+The wind is heavy, and it is the wind itself,
+The sea is the water, and the air is the air,
+The sea is the air, and the air is the sea.
+
+The sea is a sea of light, and the sea is a sea of darkness.
+
+The sea is the light, the sea is the light itself,
+The sea

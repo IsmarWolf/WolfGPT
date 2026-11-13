@@ -1,0 +1,62 @@
+{
+ "tag": "pause_test",
+ "args": {
+  "size": "pilot",
+  "optimizer": "adamw",
+  "lr": 0.001,
+  "muon_lr": 0.02,
+  "muon_wd": 0.0,
+  "steps": 60,
+  "tokens": null,
+  "warmup": 40,
+  "warmup_frac": 0.01,
+  "batch_tokens": 131072,
+  "micro_batch": 16,
+  "block_size": 1024,
+  "eval_every": 20,
+  "val_seqs": 320,
+  "data_dir": "/home/ismarwolf/wolfgpt-data/data_fw",
+  "ckpt_dir": "/home/ismarwolf/wolfgpt-data/ckpt",
+  "ckpt_every": 1000,
+  "resume": true,
+  "tag": "pause_test",
+  "compile": true,
+  "save": false
+ },
+ "params": 47917568,
+ "final_val": 7.013203477859497,
+ "best_val": 7.013203477859497,
+ "tok_s": 94034.00539386267,
+ "tflops": 29.993339123832932,
+ "peak_mem_gb": 7.352109909057617,
+ "history": [
+  {
+   "step": 0,
+   "val": 10.506395196914672
+  },
+  {
+   "step": 20,
+   "train": 7.877474784851074,
+   "val": 7.810813570022583,
+   "gnorm": 1.1438325643539429,
+   "tok_s": 94026.21961525914,
+   "tflops": 29.99085575096138
+  },
+  {
+   "step": 40,
+   "train": 7.231148719787598,
+   "val": 7.271854972839355,
+   "gnorm": 0.5741382837295532,
+   "tok_s": 94443.30684232648,
+   "tflops": 30.123891014037245
+  },
+  {
+   "step": 60,
+   "train": 6.934996128082275,
+   "val": 7.013203477859497,
+   "gnorm": 0.29787909984588623,
+   "tok_s": 94034.00539386267,
+   "tflops": 29.993339123832932
+  }
+ ]
+}

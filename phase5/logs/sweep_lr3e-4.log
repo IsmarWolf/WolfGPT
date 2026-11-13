@@ -1,0 +1,98 @@
+GPU memory free before training: 14.4 of 15.9 GB (the rest is used by other programs: close other programs)
+[sweep_lr3e-4] 150,000 train / 1,000 val conversations | 1 epochs = 4687 steps of 32 conversations | lr 0.0003 | 150,000 training conversations used
+step    0 | val 2.395 (base model, before fine-tuning)
+   per source: dolly 2.564 (n=37) | explore-instruct-rewrite 2.928 (n=4) | openhermes-50k 2.461 (n=110) | self-oss-instruct 2.317 (n=112) | smol-contraints 2.195 (n=81) | smol-magpie-ultra-short 2.402 (n=565) | smol-summarize-20k 2.658 (n=29) | smol-summarize-5k 2.424 (n=8) | smollm-rewrite-30k 2.367 (n=54)
+   step 1: 1.5s for 25,315 tokens in 8 GPU passes
+   step 2: 0.8s for 25,860 tokens in 8 GPU passes
+   step 3: 0.9s for 29,509 tokens in 8 GPU passes
+   step 4: 0.9s for 32,385 tokens in 8 GPU passes
+   step 5: 0.8s for 27,874 tokens in 8 GPU passes
+step   200 | epoch 1 | train 2.047 | val 1.965 | gnorm 1.14 | 33.3k tok/s | mem 4.9 GB used / 5.2 GB reserved | ETA 0h45m *best*
+step   400 | epoch 1 | train 1.889 | val 1.878 | gnorm 1.29 | 33.3k tok/s | mem 4.9 GB used / 5.2 GB reserved | ETA 0h42m *best*
+step   600 | epoch 1 | train 1.844 | val 1.840 | gnorm 0.59 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h40m *best*
+step   800 | epoch 1 | train 1.799 | val 1.804 | gnorm 0.63 | 33.3k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h38m *best*
+step  1000 | epoch 1 | train 1.756 | val 1.796 | gnorm 0.70 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h36m *best*
+step  1200 | epoch 1 | train 1.736 | val 1.775 | gnorm 0.59 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h33m *best*
+step  1400 | epoch 1 | train 1.706 | val 1.760 | gnorm 0.79 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h31m *best*
+step  1600 | epoch 1 | train 1.741 | val 1.732 | gnorm 1.04 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h29m *best*
+step  1800 | epoch 1 | train 1.693 | val 1.730 | gnorm 0.59 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h27m *best*
+step  2000 | epoch 1 | train 1.710 | val 1.715 | gnorm 0.44 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h25m *best*
+step  2200 | epoch 1 | train 1.667 | val 1.705 | gnorm 0.76 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h23m *best*
+step  2400 | epoch 1 | train 1.672 | val 1.694 | gnorm 0.69 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h22m *best*
+step  2600 | epoch 1 | train 1.685 | val 1.690 | gnorm 0.69 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h20m *best*
+step  2800 | epoch 1 | train 1.638 | val 1.674 | gnorm 0.45 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h18m *best*
+step  3000 | epoch 1 | train 1.627 | val 1.665 | gnorm 0.48 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h16m *best*
+step  3200 | epoch 1 | train 1.652 | val 1.657 | gnorm 0.63 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h14m *best*
+step  3400 | epoch 1 | train 1.641 | val 1.652 | gnorm 0.56 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h12m *best*
+step  3600 | epoch 1 | train 1.605 | val 1.647 | gnorm 0.42 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h10m *best*
+step  3800 | epoch 1 | train 1.610 | val 1.644 | gnorm 0.38 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h08m *best*
+step  4000 | epoch 1 | train 1.614 | val 1.638 | gnorm 0.42 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h06m *best*
+step  4200 | epoch 1 | train 1.597 | val 1.636 | gnorm 2.34 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h04m *best*
+step  4400 | epoch 1 | train 1.597 | val 1.632 | gnorm 1.05 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h02m *best*
+step  4600 | epoch 1 | train 1.598 | val 1.631 | gnorm 0.40 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h00m *best*
+step  4687 | epoch 1 | train 1.603 | val 1.630 | gnorm 0.37 | 33.4k tok/s | mem 4.9 GB used / 5.3 GB reserved | ETA 0h00m *best*
+
+best val 1.630 (base model 2.395) | saved /home/ismarwolf/wolfgpt-data/ckpt/sweep_lr3e-4_best.pt
+best model re-checked: val 1.630
+   per source: dolly 2.454 (n=37) | explore-instruct-rewrite 2.616 (n=4) | openhermes-50k 1.729 (n=110) | self-oss-instruct 0.885 (n=112) | smol-contraints 1.506 (n=81) | smol-magpie-ultra-short 1.691 (n=565) | smol-summarize-20k 1.606 (n=29) | smol-summarize-5k 2.071 (n=8) | smollm-rewrite-30k 1.075 (n=54)
+
+User: hello
+WolfGPT: Hello,
+
+I am delighted to share my story with you. I have been living in this humble village for many years, and I am deeply moved by the way the locals treat me. The way they treat me is unmatched, and it is through their love and kindness that I have truly found my place in the world. I am truly grateful to have been part of this wonderful community.
+
+The villagers have been an integral part of my life, and I am deeply honored to be a part of their life. I have been a part of their life for many years, and
+
+User: What is the capital of France?
+WolfGPT: The capital of France is Paris.
+
+User: Explain what photosynthesis is in two sentences.
+WolfGPT: Photosynthesis is a vital process that converts light energy into chemical energy. This process is essential for life on earth, with over 4 billion species existing on earth each day.
+
+User: Give me three tips for studying.
+WolfGPT: 1. **Use the most basic concepts**
+2. **Use analogies**
+3. **Read the text**
+4. **Read the text**
+5. **Read the text**
+6. **Read the text**
+7. **Read the text**
+8. **Read the text**
+9. **Read the text**
+10. **Read the text**
+11. **Read the text**
+12. **Read the text**
+13. **Read the text**
+14. **Read the text**
+15. **Read the text
+
+User: What is 12 + 15?
+WolfGPT: 12 + 15 = 25
+
+So, 12 + 15 = 25.
+
+User: Write a short poem about the sea.
+WolfGPT: The sea's calm waters,
+A calm sea,
+Their gentle sound,
+A soothing melody,
+A calm sea,
+Their salty scent,
+A soothing melody,
+A soothing melody,
+A calm sea,
+A soothing sea,
+A soothing melody,
+A soothing melody,
+A soothing melody
+A soothing sea,
+A calming sea,
+A peaceful sea,
+A soothing melody,
+A calming sea,
+A calming sea,
+A soothing sea,
+A soothing sea,
+A soothing sea,
+A calming sea,
+A calming sea,

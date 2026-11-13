@@ -1,0 +1,8 @@
+# WolfGPT: Python packages (the author used a Python 3.14 venv inside WSL2 Ubuntu).
+# torch must be a build with CUDA 12.8 or newer to run on an RTX 50-series GPU (sm_120); install it from
+# https://pytorch.org/get-started/locally/ first, then:
+torch
+numpy
+tokenizers
+datasets
+safetensors

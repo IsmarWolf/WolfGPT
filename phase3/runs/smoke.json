@@ -1,0 +1,48 @@
+{
+ "tag": "smoke",
+ "args": {
+  "size": "pilot",
+  "optimizer": "adamw",
+  "lr": 0.001,
+  "muon_lr": 0.02,
+  "steps": 10,
+  "warmup": 40,
+  "batch_tokens": 131072,
+  "micro_batch": 16,
+  "block_size": 1024,
+  "eval_every": 5,
+  "eval_batches": 20,
+  "data_dir": "/home/ismarwolf/wolfgpt-data/data_fw",
+  "tag": "smoke",
+  "compile": false,
+  "save": false
+ },
+ "params": 47917568,
+ "final_val": 9.012555932998657,
+ "best_val": 9.012555932998657,
+ "tok_s": 56360.15143883203,
+ "tflops": 19.749722463670672,
+ "peak_mem_gb": 11.560198783874512,
+ "history": [
+  {
+   "step": 0,
+   "val": 10.503430891036988
+  },
+  {
+   "step": 5,
+   "train": 9.574453949928284,
+   "val": 9.511156034469604,
+   "gnorm": 2.204150676727295,
+   "tok_s": 55782.681483242515,
+   "tflops": 19.547365460312037
+  },
+  {
+   "step": 10,
+   "train": 9.129582047462463,
+   "val": 9.012555932998657,
+   "gnorm": 1.8422744274139404,
+   "tok_s": 56360.15143883203,
+   "tflops": 19.749722463670672
+  }
+ ]
+}

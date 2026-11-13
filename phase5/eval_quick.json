@@ -1,0 +1,29 @@
+{
+ "main_best": {
+  "hellaswag": {
+   "n": 100,
+   "acc": 37.0,
+   "acc_norm": 44.0
+  },
+  "arc_easy": {
+   "n": 100,
+   "acc": 56.0,
+   "acc_norm": 52.0
+  },
+  "arc_challenge": {
+   "n": 100,
+   "acc": 20.0,
+   "acc_norm": 24.0
+  },
+  "piqa": {
+   "n": 100,
+   "acc": 63.0,
+   "acc_norm": 65.0
+  },
+  "winogrande": {
+   "n": 100,
+   "acc": 52.0,
+   "acc_norm": 52.0
+  }
+ }
+}

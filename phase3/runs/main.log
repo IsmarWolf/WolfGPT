@@ -1,0 +1,106 @@
+[main] main: 110.1M params | batch 131,072 tokens (8 seq x 16 accum) | 22888 steps = 3000M tokens | warmup 228 | train windows 2,931,656 | val windows 320
+step    0 | val 10.571
+step  250 | train 4.788 | val 4.858 | gnorm 1.03 |  45.9k tok/s | 32.9 TFLOP/s | mem 6.1 GB
+step  500 | train 4.094 | val 4.220 | gnorm 2.28 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.1 GB
+step  750 | train 3.984 | val 4.015 | gnorm 2.17 |  46.1k tok/s | 33.0 TFLOP/s | mem 6.1 GB
+step 1000 | train 3.853 | val 3.902 | gnorm 1.44 |  46.1k tok/s | 33.0 TFLOP/s | mem 6.1 GB
+step 1250 | train 3.760 | val 3.820 | gnorm 1.24 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 1500 | train 3.661 | val 3.754 | gnorm 1.05 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 1750 | train 3.536 | val 3.700 | gnorm 0.86 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 2000 | train 3.618 | val 3.662 | gnorm 0.88 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 2250 | train 3.536 | val 3.627 | gnorm 0.76 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 2500 | train 3.503 | val 3.600 | gnorm 0.74 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 2750 | train 3.518 | val 3.577 | gnorm 0.68 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 3000 | train 3.478 | val 3.551 | gnorm 0.53 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 3250 | train 3.429 | val 3.529 | gnorm 0.49 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 3500 | train 3.426 | val 3.514 | gnorm 0.55 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 3750 | train 3.421 | val 3.496 | gnorm 0.56 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 4000 | train 3.405 | val 3.481 | gnorm 0.56 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 4250 | train 3.430 | val 3.466 | gnorm 0.40 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 4500 | train 3.370 | val 3.456 | gnorm 0.39 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 4750 | train 3.388 | val 3.443 | gnorm 0.45 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 5000 | train 3.380 | val 3.430 | gnorm 0.38 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 5250 | train 3.376 | val 3.420 | gnorm 0.40 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 5500 | train 3.246 | val 3.408 | gnorm 0.35 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 5750 | train 3.368 | val 3.399 | gnorm 0.47 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 6000 | train 3.354 | val 3.387 | gnorm 0.31 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 6250 | train 3.394 | val 3.380 | gnorm 0.33 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 6500 | train 3.358 | val 3.372 | gnorm 0.29 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 6750 | train 3.260 | val 3.364 | gnorm 0.34 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 7000 | train 3.331 | val 3.358 | gnorm 0.30 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 7250 | train 3.276 | val 3.350 | gnorm 0.28 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 7500 | train 3.281 | val 3.341 | gnorm 0.26 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 7750 | train 3.212 | val 3.334 | gnorm 0.28 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 8000 | train 3.234 | val 3.330 | gnorm 0.26 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+step 8250 | train 3.272 | val 3.324 | gnorm 0.24 |  46.1k tok/s | 33.1 TFLOP/s | mem 6.1 GB
+
+Ctrl+C received: finishing this step, then saving a checkpoint...
+PAUSED at step 8417/22888. Checkpoint saved. Resume with the same command plus --resume.
+[main] main: 110.1M params | batch 131,072 tokens (8 seq x 16 accum) | 22888 steps = 3000M tokens | warmup 228 | train windows 2,931,656 | val windows 320
+resumed from step 8417 (best val 3.324)
+step 8500 | train 3.202 | val 3.316 | gnorm 0.25 |  46.1k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 8750 | train 3.263 | val 3.308 | gnorm 0.23 |  46.1k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 9000 | train 3.271 | val 3.303 | gnorm 0.21 |  46.1k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 9250 | train 3.191 | val 3.296 | gnorm 0.27 |  46.1k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 9500 | train 3.170 | val 3.292 | gnorm 0.24 |  46.1k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 9750 | train 3.184 | val 3.285 | gnorm 0.21 |  46.1k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 10000 | train 3.158 | val 3.280 | gnorm 0.21 |  46.1k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 10250 | train 3.226 | val 3.276 | gnorm 0.22 |  46.1k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 10500 | train 3.229 | val 3.269 | gnorm 0.20 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 10750 | train 3.208 | val 3.266 | gnorm 0.21 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 11000 | train 3.218 | val 3.259 | gnorm 0.17 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 11250 | train 3.179 | val 3.255 | gnorm 0.24 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 11500 | train 3.178 | val 3.249 | gnorm 0.17 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+
+Ctrl+C received: finishing this step, then saving a checkpoint...
+PAUSED at step 11521/22888. Checkpoint saved. Resume with the same command plus --resume.
+[main] main: 110.1M params | batch 131,072 tokens (8 seq x 16 accum) | 22888 steps = 3000M tokens | warmup 228 | train windows 2,931,656 | val windows 320
+resumed from step 11521 (best val 3.249)
+step 11750 | train 3.210 | val 3.244 | gnorm 0.17 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 12000 | train 3.196 | val 3.237 | gnorm 0.17 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 12250 | train 3.196 | val 3.235 | gnorm 0.17 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 12500 | train 3.113 | val 3.231 | gnorm 0.17 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 12750 | train 3.189 | val 3.226 | gnorm 0.17 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 13000 | train 3.140 | val 3.223 | gnorm 0.25 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 13250 | train 3.139 | val 3.219 | gnorm 0.17 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 13500 | train 3.059 | val 3.216 | gnorm 0.21 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 13750 | train 3.126 | val 3.211 | gnorm 0.24 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 14000 | train 3.159 | val 3.208 | gnorm 0.28 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 14250 | train 3.148 | val 3.203 | gnorm 0.24 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 14500 | train 3.165 | val 3.200 | gnorm 0.21 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 14750 | train 3.151 | val 3.197 | gnorm 0.16 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 15000 | train 3.143 | val 3.193 | gnorm 0.17 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 15250 | train 3.147 | val 3.188 | gnorm 0.19 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 15500 | train 3.150 | val 3.186 | gnorm 0.16 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 15750 | train 3.113 | val 3.183 | gnorm 0.18 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 16000 | train 3.124 | val 3.178 | gnorm 0.20 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 16250 | train 3.087 | val 3.176 | gnorm 0.16 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 16500 | train 3.084 | val 3.172 | gnorm 0.29 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 16750 | train 3.142 | val 3.171 | gnorm 0.20 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 17000 | train 3.076 | val 3.167 | gnorm 0.15 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 17250 | train 3.098 | val 3.165 | gnorm 0.19 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 17500 | train 3.152 | val 3.162 | gnorm 0.20 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 17750 | train 3.067 | val 3.160 | gnorm 0.16 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 18000 | train 3.068 | val 3.158 | gnorm 0.15 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 18250 | train 3.035 | val 3.155 | gnorm 0.21 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 18500 | train 3.038 | val 3.154 | gnorm 0.19 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 18750 | train 3.114 | val 3.151 | gnorm 0.19 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 19000 | train 3.105 | val 3.149 | gnorm 0.14 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 19250 | train 3.072 | val 3.147 | gnorm 0.20 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 19500 | train 3.083 | val 3.145 | gnorm 0.16 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 19750 | train 3.077 | val 3.143 | gnorm 0.15 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 20000 | train 3.056 | val 3.141 | gnorm 0.18 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 20250 | train 3.125 | val 3.139 | gnorm 0.16 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 20500 | train 3.065 | val 3.138 | gnorm 0.17 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 20750 | train 3.099 | val 3.137 | gnorm 0.15 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 21000 | train 3.036 | val 3.135 | gnorm 0.17 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 21250 | train 3.105 | val 3.134 | gnorm 0.18 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 21500 | train 3.073 | val 3.133 | gnorm 0.18 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 21750 | train 3.056 | val 3.132 | gnorm 0.21 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 22000 | train 3.055 | val 3.131 | gnorm 0.16 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 22250 | train 3.096 | val 3.130 | gnorm 0.17 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 22500 | train 3.095 | val 3.129 | gnorm 0.17 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 22750 | train 3.072 | val 3.129 | gnorm 0.19 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+step 22888 | train 3.087 | val 3.129 | gnorm 0.18 |  46.0k tok/s | 33.0 TFLOP/s | mem 6.5 GB
+
+[main] final val 3.129 | 46,020 tokens/s | 33.0 TFLOP/s (benchmark peak ~50) | -> runs/main.json
