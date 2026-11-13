@@ -468,11 +468,48 @@ def f16_report():
     save(fig, "16_report_card")
 
 
+def f17_network():
+    """Node-link picture of the real model: layer sizes come from the code, node counts are only for drawing."""
+    fig = frame(t("The WolfGPT network, layer by layer", "A rede do WolfGPT, camada por camada"), t("every dot stands for many numbers; 12 identical blocks sit in the middle", "cada bolinha representa muitos números; 12 blocos idênticos no meio"), size=(12, 6.6))
+    ax = fig.add_axes([0.02, 0.02, 0.96, 0.82]); blank(ax); ax.set_xlim(0, 100); ax.set_ylim(0, 60)
+    rng = np.random.default_rng(7)
+    cols = [  # x, n nodes, color, title, detail
+        (8, 6, YEL, t("tokens", "tokens"), t("up to 1,024", "até 1.024")),
+        (26, 9, ORG, t("embeddings", "embeddings"), "32,768 x 768" if L == "en" else "32.768 x 768"),
+        (46, 9, BLUE, t("attention", "atenção"), t("Q, K, V + RoPE", "Q, K, V + RoPE")),
+        (64, 9, RED, t("feed-forward", "feed-forward"), "SwiGLU"),
+        (92, 6, GRN, t("next token", "próximo token"), "32,768" if L == "en" else "32.768"),
+    ]
+    pts = []
+    for x, n, c, _, _ in cols:
+        ys = np.linspace(14, 46, n)
+        pts.append([(x, y) for y in ys])
+    for a, b in zip(pts[:-1], pts[1:]):
+        if a is pts[3]:
+            continue
+        for (x1, y1) in a:
+            for (x2, y2) in b:
+                ax.plot([x1, x2], [y1, y2], color=DIM, lw=0.7, alpha=0.45)
+    for (x1, y1) in pts[3]:                       # feed-forward -> output
+        for (x2, y2) in pts[4]:
+            ax.plot([x1, x2], [y1, y2], color=DIM, lw=0.7, alpha=0.45)
+    for (x, n, c, name, det), p in zip(cols, pts):
+        for (px, py) in p:
+            ax.add_patch(plt.Circle((px, py), 1.35, fc=c, ec=FG, lw=1.8, alpha=0.95, zorder=3))
+        ax.text(x, 52, name, color=c, fontsize=17, ha="center", va="bottom")
+        ax.text(x, 9.5, det, color=DIM, fontsize=13, ha="center", va="top")
+    box(ax, 38.5, 10.5, 33.5, 38, PUR, lw=2.2)    # one block = attention + feed-forward
+    ax.text(55.2, 4.0, t("block x 12: same shape, different weights", "bloco x 12: mesma forma, pesos diferentes"), color=PUR, fontsize=16, ha="center", va="center")
+    save(fig, "17_network")
+
+
 if __name__ == "__main__":
+    only = os.environ.get("ONLY")
     for lang in ["en", "pt"]:
         L = lang
         with sk():
             after_xkcd()
-            for f in [f01_journey, f02_hardware, f03_model, f04_tiny, f05_tokenizer, f06_pilot, f07_main, f08_hours, f09_data, f10_sweep, f11_sft, f12_identity, f13_bench, f14_flow, f15_decisions, f16_report]:
-                f()
+            for f in [f01_journey, f02_hardware, f03_model, f04_tiny, f05_tokenizer, f06_pilot, f07_main, f08_hours, f09_data, f10_sweep, f11_sft, f12_identity, f13_bench, f14_flow, f15_decisions, f16_report, f17_network]:
+                if only is None or f.__name__.startswith("f" + only):
+                    f()
     print("ok")
