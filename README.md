@@ -107,7 +107,7 @@ Rodada final: lr 3e-4, 2 épocas, 27.896 passos, 4,6 horas a 33,3 mil tokens/s. 
 
 ![identidade](docs/img/pt-BR/12_identity_stage.png)
 
-**Correções de repetição na hora do chat** (sem retreinar). Com a fase de identidade, mensagens curtas ("OK") faziam o modelo responder "I understand. I'm WolfGPT..." sem parar. O código do chat agora pontua cada resposta pelas frases repetidas de 4 tokens, rejeita as acima de 0,3 e gera de novo (mais quente, depois com menos memória). Proibir 4-gramas repetidos, em teste offline, levou 112 frases repetidas a 0. Um teste manual com 3 tentativas deu "muito melhor, perfeito" em conversa casual; o que sobra é fraqueza de conteúdo, não loops.
+**Correções de repetição na hora do chat** (sem retreinar). Com a fase de identidade, mensagens curtas ("OK") faziam o modelo responder "I understand. I'm WolfGPT..." sem parar. O código do chat agora pontua cada resposta pelas frases repetidas de 4 tokens, rejeita as acima de 0,3 e gera de novo (mais quente, depois com menos memória). Proibir 4-gramas repetidos, em teste offline, levou 112 frases repetidas a 0. Um teste manual com 3 tentativas se deu melhor em conversa casual; o que sobra é fraqueza de conteúdo, não loops.
 
 ![fluxo](docs/img/pt-BR/14_repetition_fix.png)
 
