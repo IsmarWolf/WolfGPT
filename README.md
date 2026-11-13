@@ -7,7 +7,7 @@
 
 Um GPT pequeno (110 milhões de parâmetros) construído, treinado e ajustado **do zero** numa única placa de vídeo comum (RTX 5060 Ti, 16 GB), com cada passo documentado. O objetivo era aprender como os modelos de linguagem realmente funcionam construindo um de ponta a ponta: ambiente, um GPT minúsculo à mão, dados e tokenizer, experimentos com otimizadores, um pré-treino de 3 bilhões de tokens, ajuste fino para chat, benchmarks e publicação.
 
-> O modelo final é publicado como **Llama-WolfGPT-110M** (Hugging Face: _adicionar link aqui_). É um projeto de aprendizado e uma demonstração de conversa, não um assistente confiável.
+> O modelo final é publicado como **Llama-WolfGPT-110M** (Hugging Face: [explorerkiil/Llama-WolfGPT-110M](https://huggingface.co/explorerkiil/Llama-WolfGPT-110M)). É um projeto de aprendizado e uma demonstração de conversa, não um assistente confiável.
 
 ![jornada](docs/img/pt-BR/01_journey.png)
 
@@ -422,7 +422,7 @@ Otimizador Muon (Keller Jordan e colegas), o conjunto FineWeb-Edu e o trabalho S
 
 A small GPT (110 million parameters) built, trained and fine-tuned **from zero** on one consumer GPU (RTX 5060 Ti, 16 GB), with every step documented. The goal was to learn how language models really work by building one end to end: environment, a tiny GPT by hand, data and tokenizer, optimizer experiments, a 3-billion-token pretraining run, chat fine-tuning, benchmarks and release.
 
-> The finished model is published as **Llama-WolfGPT-110M** (Hugging Face: _add link here_). It is a learning project and a chatting demo, not a reliable assistant.
+> The finished model is published as **Llama-WolfGPT-110M** (Hugging Face: [explorerkiil/Llama-WolfGPT-110M](https://huggingface.co/explorerkiil/Llama-WolfGPT-110M)). It is a learning project and a chatting demo, not a reliable assistant.
 
 ![journey](docs/img/en/01_journey.png)
 
